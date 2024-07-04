@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page protégée par mot de passe</title>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "Eau mon Adam") {
+                window.location.href = "https://youtu.be/7tCyHhjYi_8";
+            } else {
+                alert("Mot de passe incorrect. Veuillez réessayer.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Accès protégé</h1>
+    <p>Veuillez entrer le mot de passe pour accéder à la page :</p>
+    <input type="password" id="password" placeholder="Entrez le mot de passe">
+    <button onclick="checkPassword()">Soumettre</button>
+</body>
+</html>
